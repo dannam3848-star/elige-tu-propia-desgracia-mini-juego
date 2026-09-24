@@ -59,10 +59,6 @@ public class Jugador
 	{
 		Console.Write($"Rol:{rol}  ");
 		Console.Write($"nombre:{nombre}  ");
-		Console.Write($"Energia:{energia}  ");
-		Console.Write($"Hambre:{hambre}  ");
-		Console.Write($"Paga: {paga}  ");
-		Console.Write($"Tiempo: {tiempo}  ");
 	}
 	
 }

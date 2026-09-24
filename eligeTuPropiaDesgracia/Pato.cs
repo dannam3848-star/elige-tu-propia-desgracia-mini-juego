@@ -146,6 +146,15 @@ class Pato
         };
     public static string[] intro =
     {
-        
+       "======================================",
+       " GUARDAESPALDAS DEL PATO PRESIDENCIAL",
+       "======================================",
+         " ",
+       "Has conseguido un extraño trabajo.",
+       "Tu misión es proteger al pato presidencial",
+       "durante los próximos 7 días.",
+        " ",
+        "Presiona ENTER para comenzar..."
+         
     };
 }

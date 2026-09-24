@@ -1,7 +1,10 @@
 ﻿public class Program
 {
     public static void Main()
-    {
+    {   
+        Narrativa profesionPato = new Narrativa(Pato.Narraciones, Pato.Decisiones, Pato.resultados, Pato.intro, Pato.Dias);
+
+                  
         Console.Write("Escribe tu nombre: ");
         string nombre = Console.ReadLine();
 
@@ -10,14 +13,23 @@
         Jugador player = new Jugador(nombre, rol);
         player.mostrarPersoanje();
 
-        if (rol == "guardia de pato presidencial")
-        {
-            Narrativa profesionPato = new Narrativa(Pato.Narraciones, Pato.Decisiones, Pato.resultados, Pato.intro);
+        for (int i =0; i<7 ; i++){
+
+            if (rol == "guardia de pato presidencial")
+            {
+                profesionPato.mostrarIntro();
+                profesionPato.diaActual();
+            }
+            else if (rol == "cuidador de plantas")
+            {
+                //RutaPlantas();
+            }
+
+            //visualizar estado jugador
+
+            //preguntar si continua o renuncia
         }
-        else if (rol == "cuidador de plantas")
-        {
-            //RutaPlantas();
-        }
+
     }
 
     public static string trabajos()
