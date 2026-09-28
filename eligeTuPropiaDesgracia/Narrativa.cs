@@ -10,12 +10,13 @@ public class Narrativa
 
     string[] intro;
 
-    public Narrativa(String[] narrt, String[][] decs, String[][] resp, String[] ntr, String[] dias_ )
+    public Narrativa(String[] narrt, String[][] decs, String[][] resp, String[] ntr, String[] dias_, String[][] consecuencias_ )
     {
         narrativas = narrt;
         decisiones = decs;
         resultados = resp;
         intro = ntr;
+        consecuencias = consecuencias_;
         dias = dias_;
     }
 
@@ -28,7 +29,7 @@ public class Narrativa
     }
 
 
-    public void diaActual()
+    public void diaActual(Jugador player)
     {
         Console.Clear();
 

@@ -60,5 +60,10 @@ public class Jugador
 		Console.Write($"Rol:{rol}  ");
 		Console.Write($"nombre:{nombre}  ");
 	}
+
+	public void estado()
+	{
+		Console.Write($"Energia:{energia}  ");
+	}
 	
 }
