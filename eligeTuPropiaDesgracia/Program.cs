@@ -3,7 +3,10 @@
     public static void Main()
     {   
         Narrativa profesionPato = new Narrativa(Pato.Narraciones, Pato.Decisiones, Pato.resultados, Pato.intro, Pato.Dias);
+        
+        Narrativa profesionPeces = new Narrativa(Peces.Narraciones, Peces.Decisiones, Peces.resultados, Peces.intro, Peces.Dias);
 
+      Narrativa profesionRepartidor = new Narrativa(Repartidor.Narraciones, Repartidor.Decisiones, Repartidor.resultados, Repartidor.intro, Repartidor.Dias);
                   
         Console.Write("Escribe tu nombre: ");
         string nombre = Console.ReadLine();
@@ -16,6 +19,11 @@
         for (int i =0; i<7 ; i++){
 
             if (rol == "guardia de pato presidencial")
+            {
+                profesionPato.mostrarIntro();
+                profesionPato.diaActual();
+            }
+             if (rol == "traductor de peces")
             {
                 profesionPato.mostrarIntro();
                 profesionPato.diaActual();

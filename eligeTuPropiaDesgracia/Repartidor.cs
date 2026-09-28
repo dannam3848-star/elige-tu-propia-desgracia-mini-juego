@@ -1,30 +1,8 @@
-public static void RutaRepartidor()
+class Repartidor
 {
-    Console.WriteLine("\n================================");
-    Console.WriteLine(" RUTA — REPARTIDOR DE PAQUETES");
-    Console.WriteLine("================================\n");
-
-    Console.WriteLine("«Se busca repartidor de paquetes.»");
-    Console.WriteLine("«No se requiere experiencia.»");
-    Console.WriteLine("«Debe poder caminar, correr y cargar paquetes.»");
-    Console.WriteLine("«Pago: $50 por hora.»\n");
-
-    Console.WriteLine("Llegas a una pequeña oficina llena de cajas.");
-    Console.WriteLine("Hay paquetes por todas partes.");
-    Console.WriteLine("Algunos son pequeños.");
-    Console.WriteLine("Otros son enormes.");
-    Console.WriteLine("Uno parece estar respirando.\n");
-
-    Console.WriteLine("El encargado te entrega una mochila y una lista.");
-    Console.WriteLine("—Solo tienes que entregar los paquetes en las direcciones indicadas.");
-    Console.WriteLine("—¿Y qué pasa si no puedo?");
-    Console.WriteLine("—Entonces no los entregas.\n");
-
-    Console.WriteLine("Te entrega el primer paquete.");
-    Console.WriteLine("—Buena suerte.\n");
-
-    string[] dias =
-    {
+    
+     public static string[] Dias =
+       {
         "DÍA 1 — TU PRIMER REPARTO",
         "DÍA 2 — EL PAQUETE PESADO",
         "DÍA 3 — EL PAQUETE QUE NO DEBERÍA EXISTIR",
@@ -32,9 +10,12 @@ public static void RutaRepartidor()
         "DÍA 5 — EL DÍA DE LAS ENTREGAS",
         "DÍA 6 — LA ENTREGA IMPOSIBLE",
         "DÍA 7 — EL ÚLTIMO PAQUETE"
-    };
+   };
 
-    string[] narraciones =
+
+
+
+   public static string[] Narraciones =
     {
         "Tu primera entrega parece sencilla.\n\nTienes tres paquetes y las direcciones están relativamente cerca.\n\nSales de la oficina.\n\nDespués de caminar unas cuadras, llegas al primer edificio.\n\nEntregas el paquete.\n\nTodo normal.\n\nEl segundo también.\n\nPero cuando llegas al tercero...\n\nNo encuentras el número de la casa.\n\nRevisas la dirección.\n\nLa vuelves a revisar.\n\nEl número existe.\n\nPero la casa no.",
 
@@ -51,7 +32,7 @@ public static void RutaRepartidor()
         "La dirección te lleva hasta las afueras de la ciudad.\n\nEl paquete es pequeño.\n\nMucho más pequeño que todos los que has transportado durante la semana.\n\nTu jefe te llama.\n\n—Escucha bien.\n\n—¿Qué pasa?\n\n—Solo tienes que entregarlo.\n\n—¿A quién?\n\n—Lo sabrás cuando llegues.\n\nComienzas a caminar."
     };
 
-    string[][] decisiones1 =
+    public static string[][] Decisiones =
     {
         new string[]
         {
@@ -109,8 +90,7 @@ public static void RutaRepartidor()
             "D) Trabajar durante 1 hora y descansar."
         }
     };
-
-    string[][] resultados1 =
+     public static string[][] resultados =
     {
         new string[]
         {
@@ -169,246 +149,34 @@ public static void RutaRepartidor()
         }
     };
 
-    string[][] decisiones2 =
-    {
-        new string[]
-        {
-            "A) Comprar comida.",
-            "B) Guardar el dinero y aguantar el hambre.",
-            "C) Comprar algo barato para comer.",
-            "D) Comprar una comida grande y descansar."
-        },
+  
+  
+  
+  
+  public static string[] intro =
+  {
+    
+    "\n================================",
+    " RUTA — REPARTIDOR DE PAQUETES",
+    "================================\n",
 
-        new string[]
-        {
-            "A) Llevar la caja de vuelta a la oficina.",
-            "B) Dejar la caja y marcharte.",
-            "C) Esperar un rato para intentar aclarar el problema.",
-            "D) Dejar la caja y descansar antes de regresar."
-        },
+    "«Se busca repartidor de paquetes.»",
+    "«No se requiere experiencia.»",
+    "«Debe poder caminar, correr y cargar paquetes.»",
+    "«Pago: $50 por hora.»\n",
 
-        new string[]
-        {
-            "A) Llevar el nuevo paquete a la oficina.",
-            "B) Intentar entregarlo inmediatamente.",
-            "C) Llevarlo durante una hora antes de regresar.",
-            "D) Descansar antes de decidir qué hacer."
-        },
+    "Llegas a una pequeña oficina llena de cajas.",
+    "Hay paquetes por todas partes.",
+    "Algunos son pequeños.",
+    "Otros son enormes.",
+    "Uno parece estar respirando.\n",
 
-        new string[]
-        {
-            "A) Esperar durante una hora.",
-            "B) Dejar una nota y regresar.",
-            "C) Esperar durante 30 minutos.",
-            "D) Dejar el paquete y descansar unos minutos antes de bajar."
-        },
+    "El encargado te entrega una mochila y una lista.",
+    "—Solo tienes que entregar los paquetes en las direcciones indicadas.",
+    "—¿Y qué pasa si no puedo?",
+    "—Entonces no los entregas.\n",
 
-        new string[]
-        {
-            "A) Llevarlo a la oficina.",
-            "B) Intentar entregarlo en la dirección más cercana.",
-            "C) Llevarlo durante una hora para buscar otra dirección.",
-            "D) Guardarlo y descansar antes de regresar."
-        },
-
-        new string[]
-        {
-            "A) Llevar el sobre inmediatamente a la oficina.",
-            "B) Guardar el sobre y descansar.",
-            "C) Llevar el sobre después de descansar un rato.",
-            "D) Regresar inmediatamente con el sobre."
-        },
-
-        new string[]
-        {
-            "A) Entregar el paquete y terminar el trabajo.",
-            "B) Pedir un descanso antes de continuar.",
-            "C) Entregar el paquete después de descansar unos minutos.",
-            "D) Entregarlo rápidamente y regresar."
-        }
-    };
-
-    string[][] resultados2 =
-    {
-        new string[]
-        {
-            "Compras comida.",
-            "Decides guardar el dinero y aguantar el hambre.",
-            "Compras algo barato para comer.",
-            "Compras una comida grande y descansas."
-        },
-
-        new string[]
-        {
-            "Decides llevar la caja de vuelta a la oficina.",
-            "Dejas la caja y te marchas.",
-            "Esperas un rato para intentar aclarar el problema.",
-            "Dejas la caja y descansas antes de regresar."
-        },
-
-        new string[]
-        {
-            "Decides llevar el nuevo paquete a la oficina.",
-            "Intentas entregar el nuevo paquete inmediatamente.",
-            "Llevas el paquete durante una hora antes de regresar.",
-            "Decides descansar antes de tomar una decisión."
-        },
-
-        new string[]
-        {
-            "Esperas durante una hora.\n\nNadie responde.",
-            "Dejas una nota y regresas.",
-            "Esperas durante treinta minutos.",
-            "Dejas el paquete y descansas unos minutos antes de bajar."
-        },
-
-        new string[]
-        {
-            "Llevas el paquete a la oficina.",
-            "Intentas entregarlo en la dirección más cercana.",
-            "Llevas el paquete durante una hora buscando otra dirección.",
-            "Guardas el paquete y descansas antes de regresar."
-        },
-
-        new string[]
-        {
-            "Llevas el sobre inmediatamente a la oficina.",
-            "Guardas el sobre y descansas.",
-            "Descansas un rato y después llevas el sobre.",
-            "Regresas inmediatamente con el sobre."
-        },
-
-        new string[]
-        {
-            "Entregas el paquete y terminas el trabajo.",
-            "Pides un descanso antes de continuar.",
-            "Descansas unos minutos y después entregas el paquete.",
-            "Entregas el paquete rápidamente y regresas."
-        }
-    };
-
-    for (int dia = 0; dia < 7; dia++)
-    {
-        Console.WriteLine("\n================================");
-        Console.WriteLine(dias[dia]);
-        Console.WriteLine("================================\n");
-
-        Console.WriteLine(narraciones[dia]);
-
-        Console.WriteLine("\nDECISIÓN 1\n");
-
-        for (int opcion = 0; opcion < 4; opcion++)
-        {
-            Console.WriteLine(decisiones1[dia][opcion]);
-        }
-
-        Console.Write("\nElige una opción: ");
-        string eleccion = Console.ReadLine().ToUpper();
-
-        while (eleccion != "A" &&
-               eleccion != "B" &&
-               eleccion != "C" &&
-               eleccion != "D")
-        {
-            Console.Write("Opción inválida. Elige A, B, C o D: ");
-            eleccion = Console.ReadLine().ToUpper();
-        }
-
-        int indice = 0;
-
-        if (eleccion == "A")
-            indice = 0;
-        else if (eleccion == "B")
-            indice = 1;
-        else if (eleccion == "C")
-            indice = 2;
-        else
-            indice = 3;
-
-        Console.WriteLine("\n" + resultados1[dia][indice]);
-
-        Console.WriteLine("\nDECISIÓN 2\n");
-
-        for (int opcion = 0; opcion < 4; opcion++)
-        {
-            Console.WriteLine(decisiones2[dia][opcion]);
-        }
-
-        Console.Write("\nElige una opción: ");
-        eleccion = Console.ReadLine().ToUpper();
-
-        while (eleccion != "A" &&
-               eleccion != "B" &&
-               eleccion != "C" &&
-               eleccion != "D")
-        {
-            Console.Write("Opción inválida. Elige A, B, C o D: ");
-            eleccion = Console.ReadLine().ToUpper();
-        }
-
-        indice = 0;
-
-        if (eleccion == "A")
-            indice = 0;
-        else if (eleccion == "B")
-            indice = 1;
-        else if (eleccion == "C")
-            indice = 2;
-        else
-            indice = 3;
-
-        Console.WriteLine("\n" + resultados2[dia][indice]);
-
-        if (dia == 0)
-        {
-            Console.WriteLine("\nCuando finalmente regresas a la oficina, encuentras el tercer paquete.");
-            Console.WriteLine("Está exactamente sobre tu escritorio.");
-            Console.WriteLine("No recuerdas haberlo dejado ahí.");
-        }
-        else if (dia == 1)
-        {
-            Console.WriteLine("\nCuando vuelves a la oficina, encuentras otra caja exactamente igual.");
-        }
-        else if (dia == 2)
-        {
-            Console.WriteLine("\nCuando terminas el día, te das cuenta de algo.");
-            Console.WriteLine("El paquete que entregaste originalmente sigue apareciendo en tu mochila.");
-        }
-        else if (dia == 3)
-        {
-            Console.WriteLine("\nCuando bajas, ves que el ascensor vuelve a funcionar.");
-            Console.WriteLine("Se abre.");
-            Console.WriteLine("Dentro hay una montaña de paquetes.");
-            Console.WriteLine("No sabes quién los puso ahí.");
-        }
-        else if (dia == 4)
-        {
-            Console.WriteLine("\nAl regresar, tu jefe mira la caja.");
-            Console.WriteLine("—¿De dónde sacaste eso?");
-            Console.WriteLine("—Me la dieron.");
-            Console.WriteLine("Tu jefe mira la caja.");
-            Console.WriteLine("—Yo nunca la he visto.");
-        }
-        else if (dia == 5)
-        {
-            Console.WriteLine("\nCuando regresas a la oficina, tu jefe está esperando.");
-            Console.WriteLine("—Mañana será tu último día.");
-            Console.WriteLine("Te entrega una última lista.");
-            Console.WriteLine("Hay una sola dirección.");
-        }
-        else if (dia == 6)
-        {
-            Console.WriteLine("\nLa persona recibe el paquete.");
-            Console.WriteLine("Lo abre.");
-            Console.WriteLine("Dentro hay...");
-            Console.WriteLine("Otro paquete.");
-            Console.WriteLine("Te mira.");
-            Console.WriteLine("Tú miras el paquete.");
-            Console.WriteLine("La persona suspira.");
-            Console.WriteLine("—Bueno.");
-            Console.WriteLine("—¿Ahora qué?");
-            Console.WriteLine("Te entrega el nuevo paquete.");
-            Console.WriteLine("—Ahora tienes que entregarlo.");
-        }
-    }
+    "Te entrega el primer paquete.",
+    "—Buena suerte.\n",
+ };
 }
