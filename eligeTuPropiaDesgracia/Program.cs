@@ -49,10 +49,24 @@
                 profesionPlanta.mostrarIntro();
                 profesionPlanta.diaActual(player);
             }*/
-
+            //revisar esta vivo
+         bool estaVivo(int energia)
+            {
+                if (energia > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+             
             //visualizar estado jugador
 
             //preguntar si continua o renuncia
+
+           
         }
 
     }

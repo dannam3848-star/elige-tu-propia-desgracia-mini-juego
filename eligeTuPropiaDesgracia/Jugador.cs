@@ -5,7 +5,7 @@ public class Jugador
     public int energia;
     public int hambre;
     public int paga;
-    public int tiempo;
+    
 	
 	  int[] guardiaDePatoPresidencial = { 90, 50, 100, 5 };
 	  int[] traductorDePeces = { 30, 20, 20, 3 };
@@ -27,32 +27,32 @@ public class Jugador
 	   		energia =  guardiaDePatoPresidencial[0]; 
 		    hambre = guardiaDePatoPresidencial[1]; 
 			paga = guardiaDePatoPresidencial[2]; 
-	        tiempo = guardiaDePatoPresidencial[3]; 
+	       
 	      }
 	   else if (rol == "traductor de peces"){
 	   		energia =  traductorDePeces[0]; 
 		    hambre = traductorDePeces[1]; 
 			paga = traductorDePeces[2]; 
-	        tiempo = traductorDePeces[3]; 
+	      
 	      }
 		 else if (rol == "entrenador de palomas"){
 	   		energia =  entrenadorDePalomas [0]; 
 		    hambre = entrenadorDePalomas [1]; 
 			paga = entrenadorDePalomas [2]; 
-	        tiempo = entrenadorDePalomas [3]; 
+	       
 	      }
 		  else if (rol == "Repartidor de paquetes"){
 	   		energia =   repartidorDePaquetes[0]; 
 		    hambre =   repartidorDePaquetes[1]; 
 			paga =   repartidorDePaquetes[2]; 
-	        tiempo =  repartidorDePaquetes [3]; 
+	    
 	      }
 		  else 
 		  { 
 	   		energia =   repartidorDePaquetes[0]; 
 		    hambre =   repartidorDePaquetes[1]; 
 			paga =   repartidorDePaquetes[2]; 
-	        tiempo =  repartidorDePaquetes [3]; 
+	      ; 
 	      }
 	 }
 	public void mostrarPersoanje()

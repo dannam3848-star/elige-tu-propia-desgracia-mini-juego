@@ -89,11 +89,34 @@ public class Narrativa
             Console.WriteLine();
 
             Console.WriteLine(resultados[dia][indice]);
+            afectarJugador(player, consecuencias[dia][indice] );
 
             Console.WriteLine();
             Console.WriteLine("Presiona ENTER para continuar...");
             Console.ReadLine();
             dia++;
+    }
+
+    private void afectarJugador(Jugador player, String afectacion)
+    {
+        string propiedad = afectacion.Split(':')[0];
+        int valor = int.Parse(afectacion.Split(':')[1]);
+
+        Console.WriteLine(player.energia); 
+
+        if(propiedad == "energia")
+        {
+            player.energia = player.energia + valor;
+        }
+
+        Console.WriteLine(player.energia); 
+
+        
+
+        Console.WriteLine(propiedad); 
+        Console.WriteLine(valor);  
+
+
     }
 
 

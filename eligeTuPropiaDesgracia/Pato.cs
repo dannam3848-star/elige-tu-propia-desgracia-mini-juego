@@ -157,50 +157,50 @@ class Pato
 
             new string[]
             {
-                "Entras detrás del pato. Todos los presentes se quedan mirándote, pero consigues mantenerte cerca de él.",
-                "Intentas sacar al pato. El animal no parece estar de acuerdo con tu decisión.",
-                "Sales a comprar comida. Cuando vuelves, el pato sigue exactamente donde estaba.",
-                "Te sientas afuera y esperas. La reunión parece durar muchísimo tiempo."
+                "energia:-16",
+                "dinero: -30",
+                "hambre: + 5",
+                "emergia: -40"
             },
 
             new string[]
             {
-                "Dejas que el pato juegue. Parece estar teniendo el mejor día de su vida.",
-                "Intentas sacar al pato de la fuente. El pato se resiste con todas sus fuerzas.",
-                "Te sientas cerca mientras juegas de espectador. Por alguna razón, el pato parece confiar en ti.",
-                "Compras comida mientras vigilas desde lejos. El pato sigue jugando tranquilamente."
+                "dinero: +44",
+                "dinero: -50",
+                "dinero: +13",
+                "comida: +34"
             },
 
             new string[]
             {
-                "Te mantienes junto al pato. Algo extraño ocurre cerca del escenario, pero consigues mantenerlo protegido.",
-                "Desde detrás del escenario escuchas conversaciones sospechosas.",
-                "Sales a comprar comida. Cuando regresas, parece que algo importante ocurrió mientras estabas fuera.",
-                "Descansas cerca del lugar. Por primera vez en días consigues recuperar un poco de energía."
+                "energia: -45",
+                "hambre: -50",
+                "hambre:-40",
+                "energia: +34",
             },
 
             new string[]
             {
-                "Aceptas el pago especial. El presidente parece satisfecho con tu trabajo.",
-                "Preguntas cuánto tendrás que trabajar. El presidente responde que el trabajo vale $600.",
-                "Rechazas la oferta. El presidente se queda sorprendido por tu decisión.",
-                "Pides comida y dinero. El presidente acepta darte comida y $300."
+                "dinero: +200",
+                "dinero: +600.",
+                "dinero: -300",
+                "dinero: +300."
             },
 
             new string[]
             {
-                "Pasas todo el día entrenando mientras sigues al pato. No puedes permitirte perderlo de vista.",
-                "Preparas todo lo necesario y finalmente tienes tiempo para descansar.",
-                "Compras equipo para estar preparado para la conferencia.",
-                "Decides no hacer nada. El día pasa tranquilamente."
+                "energia:-50",
+                "dinero: +30",
+                "dinero: - 50",
+                "energia: +34"
             },
 
             new string[]
             {
-                "Te colocas junto al pato. Los periodistas inmediatamente comienzan a prestar atención.",
-                "Te colocas detrás del presidente para protegerlo también.",
-                "Te sientas en una esquina y observas todo lo que sucede.",
-                "Comes antes de que empiece la conferencia. Necesitas estar preparado."
+                "dinero:+50",
+                "energia:-40",
+                "energia:+20",
+                "hambre:+20",
             }
         };
     public static string[] intro =
