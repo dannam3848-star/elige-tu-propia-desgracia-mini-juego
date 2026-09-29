@@ -50,17 +50,7 @@
                 profesionPlanta.diaActual(player);
             }*/
             //revisar esta vivo
-         bool estaVivo(int energia)
-            {
-                if (energia > 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
+         
              
             //visualizar estado jugador
 
@@ -69,7 +59,23 @@
            
         }
 
+        Console.Clear();
+        Console.WriteLine("======================================");
+        Console.WriteLine("              FINAL");
+        Console.WriteLine("======================================");
+        Console.WriteLine();
+
+        if (rol == "guardia de pato presidencial")
+        {
+            Console.WriteLine("🦆 LA PERSONA MÁS IMPORTANTE DEL PAÍS");
+            Console.WriteLine();
+            Console.WriteLine("Has sobrevivido a 7 días protegiendo al pato presidencial.");
+            Console.WriteLine("El presidente está tan impresionado que decide darte un ascenso.");
+        }
+
     }
+
+
 
     public static string trabajos()
     {
@@ -96,4 +102,5 @@
 
         return rol;
     }
+    
 }

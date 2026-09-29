@@ -4,7 +4,7 @@ public class Jugador
     public string rol;
     public int energia;
     public int hambre;
-    public int paga;
+    public int dinero;
     
 	
 	  int[] guardiaDePatoPresidencial = { 90, 50, 100, 5 };
@@ -26,32 +26,32 @@ public class Jugador
 	   if (rol == "guardia de pato presidencial"){
 	   		energia =  guardiaDePatoPresidencial[0]; 
 		    hambre = guardiaDePatoPresidencial[1]; 
-			paga = guardiaDePatoPresidencial[2]; 
+			dinero = guardiaDePatoPresidencial[2]; 
 	       
 	      }
 	   else if (rol == "traductor de peces"){
 	   		energia =  traductorDePeces[0]; 
 		    hambre = traductorDePeces[1]; 
-			paga = traductorDePeces[2]; 
+			dinero = traductorDePeces[2]; 
 	      
 	      }
 		 else if (rol == "entrenador de palomas"){
 	   		energia =  entrenadorDePalomas [0]; 
 		    hambre = entrenadorDePalomas [1]; 
-			paga = entrenadorDePalomas [2]; 
+			dinero = entrenadorDePalomas [2]; 
 	       
 	      }
 		  else if (rol == "Repartidor de paquetes"){
 	   		energia =   repartidorDePaquetes[0]; 
 		    hambre =   repartidorDePaquetes[1]; 
-			paga =   repartidorDePaquetes[2]; 
+			dinero =   repartidorDePaquetes[2]; 
 	    
 	      }
 		  else 
 		  { 
 	   		energia =   repartidorDePaquetes[0]; 
 		    hambre =   repartidorDePaquetes[1]; 
-			paga =   repartidorDePaquetes[2]; 
+			dinero =   repartidorDePaquetes[2]; 
 	      ; 
 	      }
 	 }
@@ -63,7 +63,9 @@ public class Jugador
 
 	public void estado()
 	{
-		Console.Write($"Energia:{energia}  ");
+		Console.WriteLine($"Energia:{energia}  ");
+		Console.WriteLine($"Dinero: ${dinero}");
+        Console.WriteLine($"Hambre: {hambre}");
 	}
-	
-}
+}	
+

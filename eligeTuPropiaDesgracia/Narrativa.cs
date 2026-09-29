@@ -108,14 +108,18 @@ public class Narrativa
         {
             player.energia = player.energia + valor;
         }
-
-        Console.WriteLine(player.energia); 
-
+       else if(propiedad == "hambre")
+        {
+            player.hambre = player.hambre + valor;
+        }
+        else if(propiedad == "dinero")
+        {
+            player.dinero = player.dinero + valor;
+        }
         
-
-        Console.WriteLine(propiedad); 
-        Console.WriteLine(valor);  
-
+       Console.WriteLine($" Dinero: ${player.dinero}");
+       Console.WriteLine($" Energía: {player.energia}");
+       Console.WriteLine($" Hambre: {player.hambre}");
 
     }
 
