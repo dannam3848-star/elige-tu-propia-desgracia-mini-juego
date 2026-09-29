@@ -102,7 +102,6 @@ public class Narrativa
         string propiedad = afectacion.Split(':')[0];
         int valor = int.Parse(afectacion.Split(':')[1]);
 
-        Console.WriteLine(player.energia); 
 
         if(propiedad == "energia")
         {

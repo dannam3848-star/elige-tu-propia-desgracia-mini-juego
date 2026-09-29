@@ -21,6 +21,7 @@
 
         Jugador player = new Jugador(nombre, rol);
         player.mostrarPersoanje();
+        player.estado();
 
         for (int i =0; i<7 ; i++){
 
