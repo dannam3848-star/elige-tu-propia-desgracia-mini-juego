@@ -151,7 +151,66 @@ class Paloma
     };
   
   
-  
+  public static string[][] Consecuencias =
+
+
+     {
+        new string[]
+        {
+            "energia:-5",
+            "energia:-20",
+            "energia:-56",
+            "energia:-30"
+        },
+
+        new string[]
+        {
+            "hambre:-10",
+            "hambre:-45",
+            "hambre:-56",
+            "hambre:-23"
+        },
+
+        new string[]
+        {
+            "dinero:+500",
+            "dineero:+45",
+            "dinero:+34",
+            "dinero:+23"
+        },
+
+        new string[]
+        {
+            "A) dinerio:+50",
+            "B) energia:+54",
+            "C) hambre:+6",
+            "D) energia:+10"
+        },
+
+        new string[]
+        {
+            "energia:-23",
+            "energia:-27",
+            "energia:-56",
+            "energia:-30"
+        },
+
+        new string[]
+        {
+            "hambre:-12",
+            "hambre:-23",
+            "hambre:-1",
+            "hambre:-22"
+        },
+
+        new string[]
+        {
+            "dinero:+34",
+            "dinero:-34",
+            "energia:+34",
+            "dinero:+15"
+        }
+    };
   
   public static string[] intro =
   {

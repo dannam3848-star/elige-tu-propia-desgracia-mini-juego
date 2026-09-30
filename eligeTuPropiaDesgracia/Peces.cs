@@ -148,7 +148,64 @@ class Peces
     };
   
   
-  
+   public static string[][] Consecuencias =
+    {
+        new string[]
+        {
+            "energia:-10",
+            "hambre:-15",
+            "energia:-5",
+            "dinerio:-10"
+        },
+
+        new string[]
+        {
+            "energia:-12",
+            "energia:-5",
+            "dinero:+30",
+            "dinero:+60"
+        },
+
+        new string[]
+        {
+            "hambre:-2",
+            "energia:+34",
+            "energia:+56",
+            "hambre:-10"
+        },
+
+        new string[]
+        {
+            "energia:-7",
+            "energia:-17",
+            "energia:-5",
+            "energia:-28"
+        },
+
+        new string[]
+        {
+            "dinero:+45",
+            "dinero:+100",
+            "dinero:+12",
+            "energia:-10"
+        },
+
+        new string[]
+        {
+            "hambre:+50",
+            "energia:-4",
+            "energia:-15",
+            "hambre:+20"
+        },
+
+        new string[]
+        {
+            "energia:+45",
+            "energia:-10",
+            "energia:-5",
+            "energia:-50"
+        }
+    };
   
   public static string[] intro =
   {

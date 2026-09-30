@@ -149,7 +149,65 @@ class Repartidor
         }
     };
 
-  
+    public static string[][] Consecuencias =
+    {
+        new string[]
+        {
+            "energia:-27",
+            "energia:-56",
+            "energia:-34",
+            "energia:-10"
+        },
+
+        new string[]
+        {
+            "dinero:+50",
+            "energia:+20",
+            "energia:-65",
+            "energia:-30"
+        },
+
+        new string[]
+        {
+            "energia:-20",
+            "hambre:-10",
+            "energia:-45",
+            "energia:-23"
+        },
+
+        new string[]
+        {
+            "energia:-76",
+            "energia:+54",
+            "energia:+67",
+            "energia:+76"
+        },
+
+        new string[]
+        {
+            "dinero:+50",
+            "dinero:+30",
+            "dinero:+100",
+            "dinero:-23"
+        },
+
+        new string[]
+        {
+            "hambre:-10",
+            "energia:-20",
+            "energia:-15",
+            "hambre:-5"
+        },
+
+        new string[]
+        {
+            "dinero:-16",
+            "dinero:+43",
+            "energia:-34",
+            "energia:+76"
+        }
+    };
+
   
   
   

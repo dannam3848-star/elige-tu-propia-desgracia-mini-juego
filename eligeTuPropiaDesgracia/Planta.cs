@@ -152,7 +152,67 @@ class Planta
   
   
   
-  
+   public static string[][] Consecuencias =
+
+     {
+            new string[]
+            {
+                "energia:-20",
+                "energia:-10",
+                "energia:+50",
+                "energia:-34"
+            },
+
+            new string[]
+            {
+                "dinero:+43",
+                "energia:-20",
+                "energia:-34",
+                "energia:+34"
+            },
+
+            new string[]
+            {
+                "energia:-10",
+                "energia:+50",
+                "energia:-5",
+                "energia:+5"
+            },
+
+            new string[]
+            {
+                "dinero:+34.",
+                "dinero:+45",
+                "dinero:+34",
+                "dinero:-23"
+            },
+
+            new string[]
+            {
+                "dinero:-23",
+                "dinero:-23",
+                "dinero:+1",
+                "dinero-100"
+            },
+
+            new string[]
+            {
+                "energia:-45",
+                "energia:-23",
+                "energia:-10",
+                "energia:+24"
+            },
+
+            new string[]
+            {
+                "energia:-34",
+                "energia:-23",
+                "energia:-10",
+                "energia:+10."
+            }
+        };
+
+
   public static string[] intro =
    {
    
