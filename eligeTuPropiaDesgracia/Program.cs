@@ -68,7 +68,14 @@
 
         if (rol == "guardia de pato presidencial")
         {
-            Console.WriteLine("🦆 LA PERSONA MÁS IMPORTANTE DEL PAÍS");
+            if (player.dinero <= 0 || player.energia <= 0 || player.hambre >= 100)
+          {
+            Console.WriteLine("💀 LO PERDISTE TODO");
+           }
+             else
+           { 
+              Console.WriteLine("🦆 LA PERSONA MÁS IMPORTANTE DEL PAÍS");
+           }
             Console.WriteLine();
             Console.WriteLine("Has sobrevivido a 7 días protegiendo al pato presidencial.");
             Console.WriteLine("El presidente está tan impresionado que decide darte un ascenso.");
